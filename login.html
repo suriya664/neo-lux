@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="login">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login to manage Neo Lux portfolio content.">
+    <title>Neo Lux Portfolio | Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <main class="auth-page login" aria-labelledby="login-title">
+        <div class="auth-visual" aria-hidden="true"></div>
+        <div class="auth-card-wrapper">
+            <section class="auth-card" data-animate>
+                <h1 id="login-title">Welcome Back</h1>
+                <p>Log in to customize your cinematic portfolio experience.</p>
+                <div class="auth-spotlight" aria-hidden="true">
+                    <img src="https://images.unsplash.com/photo-1526481280695-3c469928f6f1?auto=format&fit=crop&w=600&q=80" alt="" role="presentation">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="" role="presentation">
+                </div>
+                <form data-validate="true" novalidate>
+                    <div class="input-field">
+                        <label for="login-email">Email or Username</label>
+                        <input id="login-email" name="email" type="text" required>
+                        <span class="error" aria-live="polite"></span>
+                    </div>
+                    <div class="input-field">
+                        <label for="login-password">Password</label>
+                        <input id="login-password" name="password" type="password" required minlength="6">
+                        <span class="error" aria-live="polite"></span>
+                    </div>
+                    <div class="remember-line">
+                        <label>
+                            <input type="checkbox" name="remember" value="yes">
+                            Remember me
+                        </label>
+                        <a href="coming-soon.html">Forgot password?</a>
+                    </div>
+                    <div class="form-footer">
+                        <button class="glass-btn" type="submit">Login</button>
+                        <p class="auth-success" role="status">Success! Redirecting to your dashboard.</p>
+                        <p class="switch-link">Don’t have an account? <a href="register.html">Register →</a></p>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="neo-footer">
+        <div class="neo-container">
+            <div class="neo-footer-content">
+                <div class="neo-footer-brand" data-animate>
+                    <h3>Neo Lux</h3>
+                    <p>Crafting cinematic digital experiences with industrial precision and copper brilliance. Where atmosphere meets interaction — designed for the luminous future.</p>
+                    <div class="neo-footer-social">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="ri-twitter-fill"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+                <div class="neo-footer-links" data-animate>
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="neo-footer-links" data-animate>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="contact.html#contact-title">Help Center</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="portfolio.html#portfolio-overview">Licensing</a></li>
+                        <li><a href="contact.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="neo-footer-contact" data-animate>
+                    <h4>Contact</h4>
+                    <p><i class="ri-map-pin-line"></i> Mumbai, India</p>
+                    <p><i class="ri-mail-line"></i> hello@neoluxstudio.com</p>
+                    <p><i class="ri-phone-line"></i> +91 98765 43210</p>
+                    <p><i class="ri-time-line"></i> Mon – Sat · 10 AM – 7 PM</p>
+                </div>
+            </div>
+            <div class="neo-footer-bottom">
+                <span>© <span id="year">2025</span> Neo Lux Studio. All rights reserved.</span>
+                <span>Forged in copper light for immersive storytellers.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js" defer></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
